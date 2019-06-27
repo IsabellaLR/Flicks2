@@ -9,27 +9,29 @@
 
     <ImageView
         android:id="@+id/ivBackdropImage"
-        android:layout_width="480dp"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="5dp"
-        app:srcCompat="@drawable/flicks_backdrop_placeholder"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="2dp" />
+        android:layout_width="467dp"
+        android:layout_height="242dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flicks_backdrop_placeholder" />
 
     <TextView
         android:id="@+id/tvTitle"
-        android:layout_width="234dp"
-        android:layout_height="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Movie Title"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:layout_editor_absoluteX="485dp"
-        tools:layout_editor_absoluteY="2dp" />
+        app:layout_constraintStart_toEndOf="@+id/ivBackdropImage"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvOverview"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="485dp"
-        tools:layout_editor_absoluteY="27dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
 </android.support.constraint.ConstraintLayout>

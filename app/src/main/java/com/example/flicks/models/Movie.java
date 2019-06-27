@@ -15,7 +15,7 @@ public class Movie {
         overview = object.getString("overview");
         posterPath = object.getString("poster_path");
         posterPath = object.getString("poster_path");
-        backdropPath = object.getString("backdrop_Path");
+        backdropPath = object.getString("backdrop_path");
     }
 
     public String getTitle() {

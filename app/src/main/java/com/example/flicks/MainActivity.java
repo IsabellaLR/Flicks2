@@ -18,6 +18,8 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import cz.msebera.android.httpclient.Header;
+
 public class MainActivity extends AppCompatActivity {
 
     public final static String API_BASE_URL = "https://api.themoviedb.org/3";
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         client.get(url, params, new JsonHttpResponseHandler() {
 
             @Override
-            public void onSuccess(int statusCode, cz.msebera.android.httpclient.Header[] headers, JSONObject response) {
+            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 try {
                     JSONArray results = response.getJSONArray("results");
                     for (int i = 0; i < results.length(); i++){
@@ -64,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(int statusCode, cz.msebera.android.httpclient.Header[] headers, String responseString, Throwable throwable) {
+            public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
                 logError("Failed to get data from now_playing endpoint", throwable, true);
             }
         });
