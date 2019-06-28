@@ -92,22 +92,6 @@ public class MainActivity extends AppCompatActivity {
                 logError("Failed getting configuration", throwable, true);
 
             }
-
-            //            public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
-//                try {
-//                    JSONObject images = response.getJSONObject("images");
-//                    imageBaseUrl = response.getString("secure_base_url");
-//                    JSONArray posterSizeOptions = response.getJSONArray("poster_sizes");
-//                    posterSize = posterSizeOptions.optString(3, "w342");
-//                    getNowPlaying();
-//                } catch (JSONException e) {
-//                    logError("Failed parsing configuration", e, true);
-//                }
-//            }
-
-//            public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable){
-//                logError("Failed getting configuration", throwable, true);
-//            }
         });
     }
 
