@@ -4,8 +4,6 @@ Flicks shows the latest movies currently playing in theaters. The app utilizes t
 
 Time spent: 5 hours spent in total
 
-GIF below only shows main features.
-
 ## User Stories
 
 The following **required** functionality is completed:
@@ -32,7 +30,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='walkthrough4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='walkthrough6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
