@@ -4,6 +4,8 @@ Flicks shows the latest movies currently playing in theaters. The app utilizes t
 
 Time spent: 5 hours spent in total
 
+GIF below only shows main features.
+
 ## User Stories
 
 The following **required** functionality is completed:
